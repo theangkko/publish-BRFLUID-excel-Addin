@@ -32,7 +32,7 @@ jobs:
         run: touch ${{ env.PUBLISH_DIR }}/.nojekyll
         
       - name: copy index.html to 404.html
-        run: cp wwwroot/index.html wwwroot/404.html
+        run: cp wwwroot/index.html wwwroot/4044.html
 
       - name: Commit to GitHub pages Repo
         if: success()
