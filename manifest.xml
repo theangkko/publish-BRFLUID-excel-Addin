@@ -21,7 +21,7 @@
 	<DisplayName DefaultValue="BRFLUID Office Add-in" />
 	<Description DefaultValue="BRFLUID Office Add-in using Blazor"/>
 	<!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
-	<IconUrl DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/Images/icon-32.png" />
+	<IconUrl DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/Images/icon-32.png" />
 
 	<SupportUrl DefaultValue="https://www.brfluid.xyz" />
 	<!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
@@ -41,8 +41,8 @@
 	    </Sets>
     </Requirements>-->
 	<DefaultSettings>
-		<SourceLocation DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/" />
-		<!--<base href="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/" />-->
+		<SourceLocation DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/" />
+		<!--<base href="https://theangkko.github.io/publish-BRFLUID-excel-Addin/" />-->
 	</DefaultSettings>
 	<!-- End TaskPane Mode integration.  -->
 
@@ -140,17 +140,17 @@
 		<!-- You can use resources across hosts and form factors. -->
 		<Resources>
 			<bt:Images>
-				<bt:Image id="icon-16" DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/Images/icon-16.png" />
-				<bt:Image id="icon-32" DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/Images/icon-32.png" />
-				<bt:Image id="icon-80" DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/Images/icon-80.png" />
+				<bt:Image id="icon-16" DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/Images/icon-16.png" />
+				<bt:Image id="icon-32" DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/Images/icon-32.png" />
+				<bt:Image id="icon-80" DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/Images/icon-80.png" />
 			</bt:Images>
 			<bt:Urls>
-				<bt:Url id="Functions.Script.Url" DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/CustomFunctions/functions.js"/>
-				<bt:Url id="Functions.Metadata.Url" DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/CustomFunctions/functions.json"/>
-				<bt:Url id="BR.Taskpane.Url" DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/" />
+				<bt:Url id="Functions.Script.Url" DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/CustomFunctions/functions.js"/>
+				<bt:Url id="Functions.Metadata.Url" DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/CustomFunctions/functions.json"/>
+				<bt:Url id="BR.Taskpane.Url" DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/" />
 
 
-				<bt:Url id="BR.DesktopFunctionFile.Url" DefaultValue="https://theangkko.github.io/BRFLUID-excel-Addin-blazor/Functions/FunctionFile.html" />
+				<bt:Url id="BR.DesktopFunctionFile.Url" DefaultValue="https://theangkko.github.io/publish-BRFLUID-excel-Addin/Functions/FunctionFile.html" />
 				<bt:Url id="BR.GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
 			</bt:Urls>
 			<!-- ShortStrings max characters==125. -->
