@@ -1,0 +1,683 @@
+{
+  "functions": [
+    {
+      "description": "Add two numbers",
+      "id": "ADD",
+      "name": "ADD",
+     "parameters": [
+        {
+          "description": "First number",
+          "name": "first",
+          "type": "number"
+        },
+        {
+          "description": "Second number",
+          "name": "second",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    //{
+    //  "description": "Displays the current time once a second",
+    //  "id": "CLOCK",
+    //  "name": "CLOCK",
+    //  "options": {
+    //    "stream": true
+    //  },
+    //  "parameters": [],
+    //  "result": {
+    //    "type": "string"
+    //  }
+    //},
+    //{
+    //  "description": "Increments a value once a second.",
+    //  "id": "INCREMENT",
+    //  "name": "INCREMENT",
+    //  "options": {
+    //    "stream": true
+    //  },
+    //  "parameters": [
+    //    {
+    //      "description": "Amount to increment",
+    //      "name": "incrementBy",
+    //      "type": "number"
+    //    }
+    //  ],
+    //  "result": {
+    //    "type": "number"
+    //  }
+    //},
+    //{
+    //  "description": "Writes a message to console.log().",
+    //  "id": "LOG",
+    //  "name": "LOG",
+    //  "parameters": [
+    //    {
+    //      "description": "String to write.",
+    //      "name": "message",
+    //      "type": "string"
+    //    }
+    //  ],
+    //  "result": {}
+    //},
+    //{
+    //  "description": "Blazor function test",
+    //  "id": "BLAZOR",
+    //  "name": "BLAZOR",
+    //  "parameters": [
+    //    {
+    //      "description": "String to write.",
+    //      "name": "first",
+    //      "type": "string"
+    //    }
+    //  ],
+    //  "result": {
+    //    "type": "string"
+    //  }
+    //},
+    //{
+    //  "description": "calc sqrt33",
+    //  "id": "SQRT3",
+    //  "name": "SQRT3",
+    //  "parameters": [
+    //    {
+    //      "description": "First number",
+    //      "name": "second",
+    //      "type": "number"
+    //    }
+    //  ],
+    //  "result": {
+    //    "type": "number"
+    //  }
+    //},
+    //{
+    //  "description": "calc sqrt",
+    //  "id": "SQRT",
+    //  "name": "SQRT",
+    //  "parameters": [
+    //    {
+    //      "description": "First number",
+    //      "name": "first",
+    //      "type": "number"
+    //    }
+    //  ],
+    //  "result": {
+    //    "type": "number"
+    //  }
+    //},
+
+    {
+      "description": "Check Library Version",
+      "id": "versionLibrary",
+      "parameters": [],
+      "result": {
+        "type": "string"
+      }
+    },
+    {
+      "description": "Get friction factor(Colebrook-White) with diameter, roughness, reynolds",
+      "id": "FrictionFactor",
+      "name": "FrictionFactor",
+      "parameters": [
+        {
+          "description": "mm",
+          "name": "pipe inner diameter",
+          "type": "number"
+        },
+        {
+          "description": "mm  _ex) 0.04572 mm for commercial steel pipe",
+          "name": "absolute roughness",
+          "type": "number"
+        },
+        {
+          "description": "-",
+          "name": "reynolds number",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get friction factor(Cheng) with diameter, roughness, reynolds",
+      "id": "FrictionFactorCheng",
+      "name": "FrictionFactorCheng",
+      "parameters": [
+        {
+          "description": "mm",
+          "name": "pipe inner diameter",
+          "type": "number"
+        },
+        {
+          "description": "mm  _ex) 0.04572 mm for commercial steel pipe",
+          "name": "absolute roughness",
+          "type": "number"
+        },
+        {
+          "description": "-",
+          "name": "reynolds number",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Saturated Temperature_'C with P",
+      "id": "steamTP",
+      "name": "steamTP",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Temperature_'C with PH",
+      "id": "steamTPH",
+      "name": "STEAMTPH",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Temperature_'C with PS",
+      "id": "steamTPS",
+      "name": "STEAMTPS",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg-K",
+          "name": "entropy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Temperature_'C with HS ",
+      "id": "steamTHS",
+      "name": "STEAMTHS",
+      "parameters": [
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg-K",
+          "name": "entropy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Sat.Pressure_bara with T",
+      "id": "steamPT",
+      "name": "STEAMPT",
+      "parameters": [
+        {
+          "description": "'C",
+          "name": "temperature",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Enthalpy_kJ/kg with PT",
+      "id": "steamHPT",
+      "name": "STEAMHPT",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "'C",
+          "name": "temperature",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Enthalpy_kJ/kg with T",
+      "id": "steamHPS",
+      "name": "STEAMHPS",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg-K",
+          "name": "entropy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Enthalpy_kJ/kg with PQ",
+      "id": "steamHPQ",
+      "name": "STEAMHPQ",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "0.0~1.0",
+          "name": "Dryness fraction",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Volume_m3/kg with PT",
+      "id": "steamVPT",
+      "name": "STEAMVPT",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "'C",
+          "name": "temperature",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Volume_m3/kg with PH",
+      "id": "steamVPH",
+      "name": "STEAMVPH",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Volume_m3/kg with PS",
+      "id": "steamVPS",
+      "name": "STEAMPS",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg-K",
+          "name": "entropy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Density_kg/m3 with PT",
+      "id": "steamRhoPT",
+      "name": "STEAMhoPT",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "'C",
+          "name": "temperature",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Density_kg/m3 with PH",
+      "id": "steamRhoPH",
+      "name": "STEAMRhoPH",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Density_kg/m3 with PS ",
+      "id": "steamRhoPS",
+      "name": "STEAMRhoPS",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg-K",
+          "name": "entropy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Entropy_kJ/kg-K with PT ",
+      "id": "steamSPT",
+      "name": "STEAMSPT",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "'C",
+          "name": "temperature",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Entropy_kJ/kg-K with PH",
+      "id": "steamSPH",
+      "name": "STEAMSPH",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Cp_kJ/kg-C with PT",
+      "id": "steamCpPT",
+      "name": "STEAMCpPT",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "'C",
+          "name": "temperature",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Cp_kJ/kg-C with PH",
+      "id": "steamCpPH",
+      "name": "STEAMCpPH",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Cv_kJ/kg-C with PT",
+      "id": "steamCvPT",
+      "name": "STEAMCvPT",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "'C",
+          "name": "temperature",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Cv_kJ/kg-C with PH",
+      "id": "steamCvPH",
+      "name": "STEAMCvPH",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Cv_kJ/kg-C with PS",
+      "id": "steamCvPS",
+      "name": "STEAMCvPS",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg-K",
+          "name": "entropy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Dyn.Viscosity_Pa-s with PT",
+      "id": "steamVisPT",
+      "name": "STEAMVisPT",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Dyn.Viscosity_Pa-s with PH",
+      "id": "steamVisPH",
+      "name": "STEAMVisPH",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Dyn.Viscosity_Pa-s with PS",
+      "id": "steamVisPS",
+      "name": "STEAMVisPS",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg-K",
+          "name": "entropy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Vapor Fraction with PH",
+      "id": "steamQPH",
+      "name": "STEAMQPH",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg",
+          "name": "enthalpy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "Get Vapor Fraction with PS",
+      "id": "steamQPS",
+      "name": "STEAMQPS",
+      "parameters": [
+        {
+          "description": "bara",
+          "name": "pressure",
+          "type": "number"
+        },
+        {
+          "description": "kJ/kg-K",
+          "name": "entropy",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    }
+
+
+  ]
+}
